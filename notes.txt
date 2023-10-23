@@ -1,0 +1,47 @@
+Object
+=======
+var objectname ={
+    key : value,
+}
+
+var object = {
+    name : "Anish",
+    age : 20
+}
+
+JSON 
+var object = {
+    "name" : "Anish",
+    "age" : "20"
+}
+var object1 = {
+    name : "Anish",
+    "age" : "20"
+}
+if (json.stringify(object)===json.stringify(object1)){
+    console.log("Is a JSON file");
+}
+else{
+    console.log("Is not a JSON file)
+}
+
+-------------------------------------------------------------------------------------------------------
+XMLHTTPRequest
+==============
+step 1 create XHR object -var obj = new XMLHTTPRequest()
+step 2 request.open(3 parameters) 
+method (get,put,post,delete)
+url
+true / false 
+request.open ("GET","https://restcountries.com/v3.1/all")
+step 3 sending a request
+request.send ()
+step 4 server response
+request.onload= function(){
+    var data = request.response
+    console.log(data);
+    console.log(JSON.parse(data));
+}
+---------------------------------------------------------------------------------------------
+for of loop => obj values 
+for in loop => obj index
